@@ -10,7 +10,7 @@ function Mat4x4Translate(mat4x4, tx, ty, tz) {
 
 // set values of mat4x4 to the scale matrix
 function Mat4x4Scale(mat4x4, sx, sy, sz) {
-    mat4x4.values =  [[sx, 0, 0, 0], [0, sy, 0, 0, 0], [0, 0, sz, 0], [0, 0, 0, 1]];
+    mat4x4.values =  [sx, 0, 0, 0, 0, sy, 0, 0, 0, 0, 0, sz, 0, 0, 0, 0, 1];
 }
 
 // set values of mat4x4 to the rotate about x-axis matrix
