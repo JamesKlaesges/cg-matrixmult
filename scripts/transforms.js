@@ -10,7 +10,7 @@ function Mat4x4Translate(mat4x4, tx, ty, tz) {
 
 // set values of mat4x4 to the scale matrix
 function Mat4x4Scale(mat4x4, sx, sy, sz) {
-    mat4x4.values =  [sx, 0, 0, 0, 0, sy, 0, 0, 0, 0, 0, sz, 0, 0, 0, 0, 1];
+    mat4x4.values = [[sx, 0, 0, 0], [0, sy, 0, 0], [0, 0, sz, 0], [0, 0, 0, 1]];
 }
 
 // set values of mat4x4 to the rotate about x-axis matrix
@@ -30,7 +30,7 @@ function Mat4x4RotateZ(mat4x4, theta) {
 
 // set values of mat4x4 to the shear parallel to the xy-plane matrix
 function Mat4x4ShearXY(mat4x4, shx, shy) {
-    mat4x4.values = [[1, 0, shx, 0], [0, 1, shy, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
+    mat4x4.values = [[1, 0, 0, 0], [0, 1, 0, 0], [shx, shy, 1, 0], [0, 0, 0, 1]];
 }
 
 // set the x,y,z values of a 3-component vector
