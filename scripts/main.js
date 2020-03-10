@@ -17,7 +17,7 @@ function CalculateCompoundTransform(transforms) {
     {
         for (int i=0; i<transforms.length; i++)
         {
-            trasform_matrices[i] = transforms[i];
+            tranform_matrices[i] = transforms[i];
         }
     }
     compound_trasform = Matrix.multiply(transform_matrices);   
