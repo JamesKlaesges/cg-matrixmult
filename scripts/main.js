@@ -17,14 +17,15 @@ function CalculateCompoundTransform(transforms) {
             console.log(transforms[i]);
         }
     }
-    compound_trasform = Matrix.multiply(transform_matrices);   
+    compound_transform = Matrix.multiply(transform_matrices);   
     return compound_transform;
 }
 
 // automatically called whenever compound transform changes
 function CalculateTransformedVertex(vertex) {
     // multiple vertex by compound_transform
-    final_vertex = Matrix.multiply(compound_transform)`
+    var transform_matrices = [compound_transform, vertex];
+    final_vertex = Matrix.multiply(transform_matrices)
     
     return final_vertex;
 }
