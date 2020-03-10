@@ -27,9 +27,8 @@ function CalculateCompoundTransform(transforms) {
 // automatically called whenever compound transform changes
 function CalculateTransformedVertex(vertex) {
     // multiple vertex by compound_transform
-    // `final_vertex = Matrix.multiply(...)`
-    var final_vertex = new Vector(4); // change / remove this
-
+    final_vertex = Matrix.multiply(compound_transform)`
+    
     return final_vertex;
 }
 
