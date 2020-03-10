@@ -12,7 +12,7 @@ function CalculateCompoundTransform(transforms) {
         compound_transform = transforms[0];
     }
     else{
-        for (int i=0; i < transforms.length; i++){
+        for (int i=0; i < 5; i++){
             tranform_matrices[i] = transforms[i];
         }
     }
