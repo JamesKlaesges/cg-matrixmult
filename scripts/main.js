@@ -17,7 +17,7 @@ function CalculateCompoundTransform(transforms) {
             console.log(transforms[i]);
         }
     }
-    compound_transform = Matrix.multiply(transform_matrices);   
+    compound_transform = Matrix.multiply(tranform_matrices);   
     return compound_transform;
 }
 
