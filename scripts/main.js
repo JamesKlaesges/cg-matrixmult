@@ -9,7 +9,7 @@ function CalculateCompoundTransform(transforms) {
     // otherwise multiply all matrices together (in proper order)
     var tranform_matrices = [];
     if (transforms.length == 1){
-        compound_transform = transforms[0];
+        compound_transform = transforms[0].mat4x4;
     }
     else{
         for (var i=0; i < transforms.length; i++){
