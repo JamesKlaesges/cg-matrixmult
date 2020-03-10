@@ -7,16 +7,12 @@ function CalculateCompoundTransform(transforms) {
     
     // if only one transform, set compound transform eequal to it
     // otherwise multiply all matrices together (in proper order)
-    // `compound_transform = Matrix.multiply(...)`
     var tranform_matrices = [];
-    if (transforms.length == 1)
-    {
+    if (transforms.length == 1){
         compound_transform = transforms[0];
     }
-    else
-    {
-        for (int i=0; i<transforms.length; i++)
-        {
+    else{
+        for (int i=0; i < transforms.length; i++){
             tranform_matrices[i] = transforms[i];
         }
     }
