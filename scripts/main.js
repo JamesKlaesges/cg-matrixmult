@@ -13,8 +13,8 @@ function CalculateCompoundTransform(transforms) {
     }
     else{
         for (var i=0; i < transforms.length; i++){
-            tranform_matrices.push(transforms[i]);
-            console.log(transforms[i]);
+            tranform_matrices.push(transforms[i].mat4x4);
+            console.log(transforms[i].mat4x4);
         }
     }
     compound_transform = Matrix.multiply(tranform_matrices);   
