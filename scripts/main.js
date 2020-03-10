@@ -14,6 +14,7 @@ function CalculateCompoundTransform(transforms) {
     else{
         for (var i=0; i < transforms.length; i++){
             tranform_matrices[i] = transforms[i];
+            console.log(transforms[i]);
         }
     }
     compound_trasform = Matrix.multiply(transform_matrices);   
