@@ -1,7 +1,6 @@
 // set values of mat4x4 to the identity matrix
 function Mat4x4Identity(mat4x4) {
-    var mat4x4 = new Matrix(4, 4);
-    mat4x4.values = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
+
 }
 
 // set values of mat4x4 to the translate matrix
