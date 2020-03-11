@@ -27,8 +27,10 @@ function CalculateTransformedVertex(vertex) {
     var transform_matrices = [];
     transform_matrices.push(compound_transform);
     transform_matrices.push(vertex);
+    console.log(compound_transform);
+    console.log(vertex);
     var final_vertex = Matrix.multiply(transform_matrices);
-    
+    console.log(final_vertex);
     return final_vertex;
 }
 
