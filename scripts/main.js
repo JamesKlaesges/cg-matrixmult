@@ -15,8 +15,9 @@ function CalculateCompoundTransform(transforms) {
         for (var i=transforms.length-1; i >= 0; i--){
             tranform_matrices.push(transforms[i].mat4x4);
         }
+        compound_transform = Matrix.multiply(tranform_matrices);   
     }
-    compound_transform = Matrix.multiply(tranform_matrices);   
+    
     return compound_transform;
 }
 
