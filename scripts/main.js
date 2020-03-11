@@ -23,8 +23,10 @@ function CalculateCompoundTransform(transforms) {
 // automatically called whenever compound transform changes
 function CalculateTransformedVertex(vertex) {
     // multiple vertex by compound_transform
-    var transform_matrices = [compound_transform, vertex];
-    var final_vertex = Matrix.multiply(transform_matrices)
+    var transform_matrices = [];
+    transform_matrices.push(compound_transform);
+    transform_matrices.push(vertex);
+    var final_vertex = Matrix.multiply(transform_matrices);
     
     return final_vertex;
 }
