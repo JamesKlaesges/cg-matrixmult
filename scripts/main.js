@@ -33,22 +33,22 @@ function CalculateTransformedVertex(vertex) {
 // automatically called whenever user modifies a transform (changes type or values)
 function ChangeTransform(index, type, values) {
     app.transforms[index].type = type;
-    if (type == translate){
+    if (type == "translate"){
         app.transforms[index].mat4x4 = Mat4x4Translate(app.transforms[index].mat4x4, values[0], values[1], values[2]);
     }
-    else if (type == scale){
+    else if (type == "scale"){
         app.transforms[index].mat4x4 = Mat4x4Scale(app.transforms[index].mat4x4, values[0], values[1], values[2]);
     }
-    else if (type == rotate_x){
+    else if (type == "rotate_x"){
         app.transforms[index].mat4x4 = Mat4x4RotateX(app.transforms[index].mat4x4, values[0]);
     }
-    else if (type == rotate_y){
+    else if (type == "rotate_y"){
         app.transforms[index].mat4x4 = Mat4x4RotateY(app.transforms[index].mat4x4, values[0]);
     }
-    else if (type == rotate_z){
+    else if (type == "rotate_z"){
         app.transforms[index].mat4x4 = Mat4x4RotateZ(app.transforms[index].mat4x4, values[0]);
     }
-    else if (type == shear){
+    else if (type == "shear"){
         app.transforms[index].mat4x4 = Mat4x4ShearXY(app.transforms[index].mat4x4, values[0], values[1]);
     }
 
