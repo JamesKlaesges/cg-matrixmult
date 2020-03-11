@@ -33,7 +33,9 @@ function CalculateTransformedVertex(vertex) {
 // automatically called whenever user modifies a transform (changes type or values)
 function ChangeTransform(index, type, values) {
     app.transforms[index].type = type;
-    // update `app.transforms[index].mat4x4`
+    console.log(type);
+    console.log(values);
+    // app.transforms[index].mat4x4 = Mat4x4Translate(type, values);
 
     // recalculate compound transform and tranformed vertex
     app.compound = CalculateCompoundTransform(app.transforms);
