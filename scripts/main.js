@@ -36,7 +36,7 @@ function CalculateTransformedVertex(vertex) {
 function ChangeTransform(index, type, values) {
     var mat4x4 = app.transforms[index].mat4x4;
     app.transforms[index].type = type;
-    console.log(type);
+    
     if (type == "translate"){
         app.transforms[index].mat4x4 = Mat4x4Translate(mat4x4, values[0], values[1], values[2]);
     }
