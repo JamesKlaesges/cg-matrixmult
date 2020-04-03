@@ -9,6 +9,7 @@ function Mat4x4Identity(mat4x4) {
 function Mat4x4Translate(mat4x4, tx, ty, tz) {
     var mat4x4 = new Matrix(4, 4);
     mat4x4.values = [[1, 0, 0, tx], [0, 1, 0, ty], [0, 0, 1,tz], [0, 0, 0, 1]];
+    console.log(mat4x4);
     return mat4x4;
 }
 
