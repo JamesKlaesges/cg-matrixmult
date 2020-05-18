@@ -12,7 +12,7 @@ function CalculateCompoundTransform(transforms) {
         compound_transform = transforms[0].mat4x4;
     }
     else{
-        for (var i=0; i < transforms.length; i++){
+        for (var i=transforms.length - 1; i >= 0 ; i--){
             tranform_matrices.push(transforms[i].mat4x4);
         }
         compound_transform = Matrix.multiply(tranform_matrices);   
